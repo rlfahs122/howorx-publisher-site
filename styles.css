@@ -1,0 +1,29 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #142033; background: #f5f7fa; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.6; }
+.site-header, main, footer { max-width: 920px; margin-inline: auto; padding-inline: 1.5rem; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: 1.4rem; padding-bottom: 1.4rem; }
+.site-name { font-weight: 850; font-size: 1.2rem; letter-spacing: .04em; color: #142033; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+nav a { color: #244466; text-decoration: none; }
+nav a[aria-current="page"] { font-weight: 700; text-decoration: underline; text-underline-offset: .3rem; }
+main { background: white; border: 1px solid #e0e6ee; border-radius: 16px; box-shadow: 0 6px 24px #1420330d; padding: 2rem 2.5rem; }
+.eyebrow { color: #486c95; font-size: .78rem; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 .3rem; }
+h1, h2 { line-height: 1.22; }
+h1 { font-size: clamp(2rem, 4vw, 2.9rem); margin: .4rem 0 1rem; }
+h2 { font-size: 1.27rem; margin: 2rem 0 .55rem; }
+p, li { max-width: 72ch; }
+.lead { font-size: 1.1rem; color: #30465e; }
+.steps { padding-left: 1.45rem; }
+.steps li { padding-left: .2rem; margin: .6rem 0; }
+.policy-card { background: #eff5fc; border-radius: 12px; padding: .2rem 1.2rem 1.3rem; margin-top: 1.7rem; }
+.button { background: #1456a5; color: white; border-radius: 8px; display: inline-block; padding: .6rem .95rem; text-decoration: none; font-weight: 650; }
+.secondary-link { margin-left: .7rem; }
+.channel { border-top: 1px solid #e3e8ee; margin-top: 2rem; }
+.youtube-link { display: inline-block; background: #fff; margin-top: .35rem; padding: .35rem; border: 1px solid #e0e6ee; border-radius: 6px; }
+.youtube-link img { display: block; width: 170px; height: auto; }
+.effective { color: #526176; }
+a { color: #1456a5; }
+footer { color: #526176; font-size: .88rem; padding-top: 1.2rem; padding-bottom: 2rem; }
+footer p { margin: .25rem 0; }
+@media (max-width: 650px) { .site-header { display: block; } nav { margin-top: .5rem; gap: .8rem; } main { padding: 1.4rem; } .secondary-link { display: inline-block; margin-top: .8rem; } }
