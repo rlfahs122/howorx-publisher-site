@@ -22,8 +22,22 @@ p, li { max-width: 72ch; }
 .channel { border-top: 1px solid #e3e8ee; margin-top: 2rem; }
 .youtube-link { display: inline-block; background: #fff; margin-top: .35rem; padding: .35rem; border: 1px solid #e0e6ee; border-radius: 6px; }
 .youtube-link img { display: block; width: 170px; height: auto; }
+.policy-actions { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem; }
+.policy-actions .secondary-link, .policy-actions .youtube-link { margin: 0; }
 .effective { color: #526176; }
 a { color: #1456a5; }
 footer { color: #526176; font-size: .88rem; padding-top: 1.2rem; padding-bottom: 2rem; }
 footer p { margin: .25rem 0; }
 @media (max-width: 650px) { .site-header { display: block; } nav { margin-top: .5rem; gap: .8rem; } main { padding: 1.4rem; } .secondary-link { display: inline-block; margin-top: .8rem; } }
+@media print {
+  body.home { font-size: 10.5pt; line-height: 1.35; }
+  .home .site-header { padding-top: .35rem; padding-bottom: .6rem; }
+  .home main { padding: .8rem 1.1rem; box-shadow: none; }
+  .home h1 { font-size: 21pt; margin: .2rem 0 .5rem; }
+  .home h2 { font-size: 13pt; margin: .8rem 0 .35rem; }
+  .home .lead { font-size: 11pt; }
+  .home .steps li { margin: .25rem 0; }
+  .home .policy-card { margin-top: .7rem; padding: .1rem .9rem .7rem; }
+  .home .channel { margin-top: .7rem; }
+  .home footer { padding-top: .4rem; padding-bottom: .3rem; }
+}
