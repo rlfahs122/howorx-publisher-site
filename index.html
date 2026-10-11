@@ -17,36 +17,42 @@
     </nav>
   </header>
   <main>
-    <p class="eyebrow">Owner-operated publishing software</p>
+    <p class="eyebrow">Owner-operated video publishing software</p>
     <h1>HOWORX Publishing Client</h1>
-    <p class="lead">An internal tool for preparing and uploading the HOWORX channel operator's engineering explainers. The client is not a public sign-up service and is not sold or distributed to other creators.</p>
+    <p class="lead">HOWORX Publishing Client is a private tool used by the HOWORX channel operator to prepare, organize and publish educational science and engineering videos. It is not offered as a public sign-up service.</p>
 
     <section aria-labelledby="workflow">
       <h2 id="workflow">What the client does</h2>
-      <ol class="steps">
-        <li>The authorized channel operator selects a finished video and reviews its title, description, visibility and synthetic-media disclosure.</li>
-        <li>With the operator's Google authorization, the client uploads the video using YouTube API Services.</li>
-        <li>The client records the upload ID and checks processing and visibility so it can report the result without creating duplicate uploads.</li>
-      </ol>
-      <p>The local desktop/command-line client is available only to its operator. There is no public login or demo account. Reviewers may request a supervised demonstration using the contact address below.</p>
+      <ul class="steps">
+        <li>Reads selected HOWORX production files and job records from the operator's Google Drive, and stores production outputs and records in the operator's project folders</li>
+        <li>Uploads authorized videos to the operator's HOWORX YouTube channel using YouTube API Services</li>
+        <li>Sets or updates authorized video information, thumbnails, captions, visibility, publication schedules and altered or synthetic content disclosures</li>
+        <li>Checks the channel, processing status and publication result, and retains job records to reduce duplicate uploads</li>
+        <li>Provides a separately authorized read-only analytics feature for aggregate channel and video performance</li>
+      </ul>
+      <p>The current workflow combines owner-controlled cloud preparation with local publishing steps. Fully unattended cloud publishing is under evaluation. Japanese audio-track registration uses a separate YouTube Studio step.</p>
     </section>
 
-    <section class="policy-card" aria-labelledby="policies">
-      <h2 id="policies">Privacy and terms</h2>
-      <p>Before authorizing the client, read how it handles Google and YouTube data and how to request deletion.</p>
+    <section aria-labelledby="authorization">
+      <h2 id="authorization">Google authorization</h2>
+      <p>The operator grants access through Google OAuth. Requested permissions depend on the enabled workflow. The current cloud authorization configuration includes full Google Drive access and YouTube management access; these are broader than access to one selected file or permission only to upload a video.</p>
+      <p>The client does not request a Google password. Review the Privacy Policy and Terms of Use before authorizing or using the client.</p>
+    </section>
+
+    <section class="policy-card" aria-label="Privacy, terms and YouTube channel">
       <div class="policy-actions">
-        <a class="button" href="privacy.html">Read the Privacy Policy</a>
+        <a class="button" href="privacy.html">Privacy Policy</a>
         <a class="secondary-link" href="terms.html">Terms of Use</a>
+        <a href="https://www.youtube.com/channel/UCe1_3fPdckwfM9WR865OygQ" target="_blank" rel="noopener noreferrer">HOWORX on YouTube</a>
         <a class="youtube-link" href="https://www.youtube.com/channel/UCe1_3fPdckwfM9WR865OygQ" target="_blank" rel="noopener noreferrer" aria-label="Visit the HOWORX channel on YouTube">
           <img src="https://developers.google.com/static/youtube/images/developed-with-youtube-sentence-case-dark.png" alt="Developed with YouTube" width="170" height="45">
         </a>
       </div>
     </section>
 
-    <section class="channel" aria-labelledby="channel">
-      <h2 id="channel">Published channel</h2>
-      <p>Educational videos produced by HOWORX appear on the channel; this information site does not display or host video content.</p>
-      <p><a href="https://www.youtube.com/channel/UCe1_3fPdckwfM9WR865OygQ" target="_blank" rel="noopener noreferrer">Visit the HOWORX channel on YouTube</a></p>
+    <section class="channel" aria-labelledby="access">
+      <h2 id="access">Access and contact</h2>
+      <p>The executable client is available only to its operator; this website is an information page and has no public login or demo account. Questions about the client or a supervised review can be sent to <a href="mailto:contact.bidnis@gmail.com">contact.bidnis@gmail.com</a>.</p>
     </section>
   </main>
   <footer><p>Independent software; not affiliated with or endorsed by Google or YouTube.</p><p>Contact: <a href="mailto:contact.bidnis@gmail.com">contact.bidnis@gmail.com</a></p></footer>

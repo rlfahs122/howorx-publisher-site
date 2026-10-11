@@ -19,35 +19,78 @@
   <main>
     <p class="eyebrow">Owner-operated publishing software</p>
     <h1>Privacy Policy</h1>
-    <p class="lead">Effective 27 September 2026. This policy covers the HOWORX Publishing Client, an internal tool used by the HOWORX channel operator. It does not cover YouTube itself or other Google services.</p>
+    <p class="lead">HOWORX Publishing Client</p>
+    <p class="effective">Effective: 2026-10-12</p>
 
     <section>
-      <h2>Authorization and data accessed</h2>
-      <p>The operator authorizes access through Google OAuth. The client does not ask for or store a Google password. With the operator's permission, it accesses the authorized channel identity, uploads videos and metadata, and checks upload processing and visibility. A separately authorized read-only analytics path can retrieve aggregate channel and video performance, including views, engaged views, likes, comment counts, subscriber gains, audience geography, and traffic-source totals. The client does not retrieve viewer identities or comment text.</p>
-      <p>Google's <a href="https://policies.google.com/privacy">Privacy Policy</a> governs Google's processing. You may review and revoke this client's access in <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</p>
+      <h2>1. Who and what this policy covers</h2>
+      <p>HOWORX Publishing Client is a private production and publishing tool operated by the HOWORX channel operator. This policy covers the client's handling of Google and YouTube data and this public information website. Google, YouTube, GitHub and the operator's cloud service providers also process information under their own terms and privacy policies.</p>
+      <p>Privacy contact: <a href="mailto:contact.bidnis@gmail.com">contact.bidnis@gmail.com</a></p>
     </section>
 
     <section>
-      <h2>Purpose and sharing</h2>
-      <p>The client uses these data to publish finished videos to the operator's channel, prevent duplicate uploads, verify processing and visibility, and evaluate aggregate video performance. It does not sell YouTube API data or offer accounts to third-party creators. Uploads and related metadata are sent to YouTube through YouTube API Services. The operator does not share stored OAuth tokens or API data with advertisers.</p>
+      <h2>2. Google authorization and information accessed</h2>
+      <p>The operator authorizes the client through Google OAuth. The client does not ask for or store the operator's Google password. OAuth access and refresh credentials are used to make authorized requests.</p>
+      <p>Google Drive: The workflow accesses the authorized account identity, selected production files, file names and identifiers, folder information and related metadata. Production material can include scripts, images, narration, captions, videos, thumbnails, quality checks and job records. The workflow reads project inputs and saves production outputs and records to the operator's Drive project folders. The current cloud authorization uses the full Drive scope. This permission is broader than access only to those project folders.</p>
+      <p>YouTube: The workflow accesses the authorized channel identity and video information, uploads videos and related media, and reads or updates authorized metadata, thumbnails, captions, visibility, publication schedules and altered or synthetic content disclosures. It records video identifiers, processing results, publication state and related execution receipts.</p>
+      <p>Analytics: A separately authorized read-only feature can retrieve aggregate video and channel performance, including views, engaged views, likes, comment counts, subscribers gained, viewing duration, audience country and traffic sources. This feature does not retrieve viewer identities or comment text.</p>
+      <p>The current cloud authorization uses YouTube management access. Other implemented local paths use upload and read-only analytics permissions. Not every workflow uses every permission. OAuth authorization does not by itself approve an unrelated upload, deletion or change of visibility.</p>
     </section>
 
     <section>
-      <h2>Storage and retention</h2>
-      <p>In the current owner-only local deployment, OAuth credentials, upload receipts, and analytics snapshots are stored on the operator's computer in project data files excluded from the public source repository. They are not published on this website. The client can also retain YouTube video IDs and upload status in local job records to prevent duplicate publication. Cloud-hosted unattended operation is a future plan, not the deployment described here; this policy will be updated before such operation begins.</p>
-      <p>The operator periodically reviews stored YouTube API data and deletes or refreshes data that the applicable YouTube API rules no longer permit to be retained. OAuth credentials are kept only while the authorization is needed. Local copies may remain until the operator completes a deletion request or ends use of the client. Published videos remain subject to YouTube's own controls and retention rules.</p>
+      <h2>3. Why information is used and where it is processed</h2>
+      <p>Information is used to carry out the operator's selected production and publishing work, verify file and publication results, avoid duplicate uploads, diagnose failures and review aggregate performance.</p>
+      <p>The workflow uses the following services:</p>
+      <ul class="steps">
+        <li>Google Drive for project files and durable production records</li>
+        <li>YouTube API Services for authorized channel operations and YouTube Analytics for the separately enabled reporting feature</li>
+        <li>OpenAI Codex cloud workspaces for selected production and automation work</li>
+        <li>Private GitHub repositories and coordination records for code and operational results; those records may include video identifiers, publication status and links to private project files</li>
+        <li>Google Cloud Text-to-Speech for selected narration text used to create speech</li>
+      </ul>
+      <p>The operator also works with local copies on the operator's computer. Service providers receive the information required by the work performed through their services. Publication sends the selected content and metadata to YouTube; its audience depends on the visibility or schedule authorized by the operator.</p>
+      <p>The client is not a service for selling Google or YouTube API data. Stored OAuth tokens and API data are not offered to advertisers. Google API information is subject to the Google API Services User Data Policy and, for Drive data, the Google Workspace user data and developer policy, including their Limited Use restrictions:</p>
+      <p><a href="https://developers.google.com/terms/api-services-user-data-policy">https://developers.google.com/terms/api-services-user-data-policy</a></p>
+      <p><a href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy">https://developers.google.com/workspace/workspace-api-user-data-developer-policy</a></p>
     </section>
 
     <section>
-      <h2>Access revocation and deletion</h2>
-      <p>The operator can revoke Google authorization at any time through <a href="https://myaccount.google.com/permissions">Google Account permissions</a>. To request deletion of data held by the client, email <a href="mailto:contact.bidnis@gmail.com">contact.bidnis@gmail.com</a>. The operator will revoke the relevant OAuth grants and delete locally stored YouTube API data within seven days of a verified request, and will report any item that cannot be deleted immediately. This includes local upload receipts, analytics snapshots, and YouTube API fields in job records. Revoking or deleting client data does not itself delete a video already published on YouTube; use YouTube's own controls for that.</p>
-      <p>The current deployment has no separately operated cloud copy of these OAuth credentials or API data. If storage or backup practices change, this policy and the deletion procedure will be updated before migration.</p>
+      <h2>4. Storage and protection</h2>
+      <p>Depending on the execution path, OAuth credentials are held in local credential files or the operator's saved cloud environment secret configuration. The cloud refresh implementation keeps the resulting access token in memory rather than writing it to a job file.</p>
+      <p>Project files and operational records may be stored on the operator's computer, in the operator's private Drive folders, in private GitHub records and in the cloud workspaces used for the job. They are not published as part of this information website. Communication with Google API endpoints uses HTTPS.</p>
+      <p>This policy does not represent that all data remains on the operator's computer, is confined to a particular country, or is erased automatically when a cloud job finishes.</p>
     </section>
 
     <section>
-      <h2>Your choices and contact</h2>
-      <p>Only the channel operator uses this client. The operator can stop using it, revoke authorization, or request a copy or deletion of data stored by the client. For privacy questions, contact <a href="mailto:contact.bidnis@gmail.com">contact.bidnis@gmail.com</a>. Never email passwords, authorization codes, or OAuth tokens.</p>
-      <p>Use of YouTube through the client is also subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+      <h2>5. Retention and deletion</h2>
+      <p>The operator manages stored project files and API records. The local client provides inventory and deletion controls for specified local OAuth files, upload records, analytics records and YouTube fields in local job records. It also provides a manual age-based cleanup function for supported local database records.</p>
+      <p>Those local controls do not cover cloud-held credentials, Drive copies, GitHub records, remote storage or backups. The older upload-receipt JSON cache does not support reliable age-based cleanup. A system-wide automatic deletion or expiry process has not been verified.</p>
+      <p>To request access to or deletion of information held by the client, email <a href="mailto:contact.bidnis@gmail.com">contact.bidnis@gmail.com</a> and identify the relevant account or project records without sending credentials. Deletion across the local and cloud stores requires separate handling of each relevant copy. The operator must follow the applicable Google and YouTube retention and deletion requirements; this policy does not claim that running the local cleanup tool completes that process.</p>
+    </section>
+
+    <section>
+      <h2>6. Revoking access</h2>
+      <p>Google authorization can be revoked at:</p>
+      <p><a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a></p>
+      <p>Revocation stops further access using the revoked authorization. It does not itself erase copies already held in the client's local or cloud stores. Request deletion using the contact address above.</p>
+      <p>Deleting the client's copies does not remove videos or other data stored by YouTube. Manage those separately through YouTube's controls.</p>
+    </section>
+
+    <section>
+      <h2>7. This website</h2>
+      <p>This information website has no public account registration, advertising features or analytics scripts. It is hosted on GitHub Pages. GitHub records visitors' IP addresses for security as described in its privacy statement:</p>
+      <p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</a></p>
+      <p>The homepage loads an official YouTube branding image from Google's servers, which sends a normal web request to Google. Links to YouTube and other services take you to services with their own privacy practices.</p>
+      <p>Google's processing is described in the Google Privacy Policy:</p>
+      <p><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+    </section>
+
+    <section>
+      <h2>8. Changes and contact</h2>
+      <p>Material changes to the data handled or the purposes for using it will be reflected in this policy and presented to the operator for review before use of the changed workflow.</p>
+      <p>For privacy questions, contact <a href="mailto:contact.bidnis@gmail.com">contact.bidnis@gmail.com</a>. Do not email passwords, authorization codes or OAuth tokens.</p>
+      <p>Use of YouTube through the client is also subject to the YouTube Terms of Service:</p>
+      <p><a href="https://www.youtube.com/t/terms">https://www.youtube.com/t/terms</a></p>
     </section>
   </main>
   <footer><p>Independent software; not affiliated with or endorsed by Google or YouTube.</p><p>Contact: <a href="mailto:contact.bidnis@gmail.com">contact.bidnis@gmail.com</a></p></footer>
